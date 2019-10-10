@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PageMain</title>
+    
+</head>
+<style>
+    *{
+       font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+       font-size: 18px;
+       transition: all 0.4s ease;
+      }
+       div.container1 {
+        background-color: turquoise;
+        display: flex; 
+        justify-content: flex-end;
+        flex-direction: row;
+       }
+       div.container2{
+         display: flex; 
+         background-color: turquoise;
+         flex-direction: row;
+         justify-content: space-evenly;
+     }
+     div.container2_1{
+         flex-basis: 25%;
+         max-height: 600px;
+         overflow: scroll;
+         background-color: whitesmoke;
+         margin:5px;
+         border: 1px solid  rebeccapurple;
+         flex-direction: column;
+        
+     }
+     div.container2_2{
+         flex-basis: 75%;
+         max-height: 600px;
+         overflow: scroll;
+         background-color: whitesmoke;
+         margin: 5px;
+         border: 1px solid  rebeccapurple;
+         flex-direction: column;
+     }
+       footer {
+           color: turquoise;
+           float: right;
+           max-width: 100px;
+           padding: 8px;
+       }
+       
+       header {
+           padding: 11px;
+           color: turquoise;
+           background-color: royalblue;
+           clear: left;
+           text-align: auto;
+       }
+       img {
+           width: 30px;
+           height: 30px;
+           border-radius: 100%;
+       }
+       input {
+        color: black;
+        background-color: whitesmoke;
+        font-size: 20px;
+        border: 0px;
+        width:100%;
+       }
+       .article-body{
+          color: black;
+          font-size: 20px;
+       }
+       .article-body:hover{
+           box-shadow:  5px 0px 15px  rebeccapurple;
+           color: royalblue;
+           background-color: white;
+           text-indent: 10px; 
+           padding: 2px;
+       }
+       .outline.artical-wrapp:hover {
+           box-shadow: 0px 0px 10px royalblue;
+           background-color: white;
+       }
+       .aside-blogger:hover {
+           box-shadow: 0px 0px 10px royalblue;
+           background-color: white;
+       }
+       .aside-blogger {
+           display: flex;
+           margin: 5px;
+       }
+       .article-author{
+        
+        color: black;
+        font-size: 14px;
+        padding: 5px;
+       }
+       .article-author:hover {
+        text-indent: 10px;        
+        color: rebeccapurple;
+       }
+
+       .article-title{
+        display: block;
+        color: black;
+        font-size: 15px;
+        padding: 5px;
+       }
+       .article-title:hover {
+        text-indent: 10px; 
+        color: rebeccapurple;
+       }
+       .article-header{
+        display: flex;
+        justify-content: space-between;
+       }
+       nav {
+        float: right;
+       }
+       img:hover{
+        box-shadow: 0px 0px 20px rebeccapurple;
+       }
+       
+       nav ul {
+           color: white;
+           background-color: turquoise;            
+           list-style-type: none;
+           padding: 0;
+       }
+       li     {
+           float: left;
+           }
+
+       li a {
+           display: inline-block;
+           color: white;
+           text-align: center;
+           padding: 14px 16px;
+           text-decoration: none;
+       }
+       li a:hover {
+            background-color: royalblue;
+           }
+       .active {
+            background-color: turquoise;
+              }
+       .beta {
+        background-color: rebeccapurple;
+             }
+       article {
+           color: blueviolet;
+           padding: 1em;
+           overflow: hidden;
+       }
+       article p, article h1 {
+           text-align: center;
+       }
+       </style>
+       
+<body onload="onload()">
+        <header>
+             <h1>Main Page</h1>
+         </header>  
+    <div class="container1">
+        <nav>
+               <ul> 
+                    <li><a href="page_2_login.html" class="active">Log in</a></li> 
+                    <li><a href="page_3_register.html" class="active">Registration</a></li> 
+                    <li><a  class = "beta">About</a></li>   
+              </ul> 
+        </nav>
+    </div>
+    <div class = "container2">
+        <div id = "bloger" class = "container2_1">       
+         
+         </div> 
+        <div   class = "container2_2">   
+        <section id = "post" >
+
+        </section >
+         </div>
+    </div>
+    <script type="text/javascript" src="blogGet.js"></script>
+</body>
+</html>

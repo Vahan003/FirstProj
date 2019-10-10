@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PageLog</title>
+    
+</head>
+<style>
+    *{ 
+       font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+       font-size: 18px;
+       transition: all 0.4s ease;
+       
+      }
+       div.container {
+           display: flex;
+           border: 1px solid blueviolet;
+           background-color: turquoise;
+           justify-content: flex-end;
+           flex-direction: row;
+       }
+       
+       header {
+           padding: 11px;
+           color: turquoise;
+           background-color: royalblue;
+           clear: left;
+           text-align: auto;
+       }
+       
+       
+       
+       nav ul {
+           list-style-type: none;
+           color: white;                
+           list-style-type: none;
+           padding: 0;
+       }
+        
+       li {
+           float: left;
+           }
+       li a {
+           display: inline-block;
+           color: white;
+           text-align: center;
+           padding: 14px 16px;
+           text-decoration: none;
+       }
+       li a:hover {
+            background-color: royalblue;
+           }
+       .active {
+            background-color: turquoise;
+           }
+       .beta {
+            background-color: rebeccapurple;
+           }
+       form {
+       color: blueviolet;
+       overflow: visible;
+       text-align: center;
+       
+       }
+       form br, form input {
+           border: 1px;
+           color: white;
+           background-color: royalblue;
+           text-align: center;
+       }
+       </style>
+     
+<body>
+        <header> 
+            <h1>Log in Page</h1>
+         </header> 
+        <div class="container">
+     
+         <nav>
+              <ul> 
+              <li><a  href="page_1_main.html" class="active">Home</a></li>
+              <li><a  class = "beta">About</a></li>    
+             </ul> 
+          </nav>
+   
+        </div>         
+ <form action="page_4_work.html">
+    Nickname:<br>
+    <input type="text" name="nick" >
+    <br>
+    Password:<br>
+    <input type="password" name="pass" >
+    <br><br>
+    <input  type="submit" value="Submit">
+    <br><br>
+  </form> 
+        </div>
+</body>
+</html>

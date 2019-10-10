@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Regis</title>
+    
+</head>
+<style>
+    *{
+     font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+     font-size: 18px;
+     transition: all 0.4s ease;
+    }
+     div.container0 {
+         display: flex;
+         padding: 11px;
+         color: turquoise;
+         background-color: royalblue;
+     }
+     div.container1 {
+         padding: auto;
+         display: flex;
+         background-color: turquoise;
+         flex-direction: row;
+         justify-content: flex-end;
+     }
+     div.container2{
+         display: flex; 
+         background-color: turquoise;
+         flex-direction: row;
+         justify-content: center;
+     }
+     div.container3{
+         display: flex; 
+         background-color: turquoise;
+         flex-direction: row;
+         justify-content: center;
+     }
+     div.item {
+        padding: 5px;
+     }
+     
+     nav ul {
+         list-style-type: none;
+         color: white;                
+         list-style-type: none;
+         padding: 0;
+     }
+      
+     li {
+         float: left;
+         align-self: flex-end;
+         }
+     li a {
+         display: inline-block;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+     }
+     li a:hover {
+          background-color: royalblue;
+         }
+     .active {
+          background-color: turquoise;
+         }
+     .beta {
+          background-color: rebeccapurple;
+         }
+     input{
+         margin: 0px 0px 0px 0px;
+         border: 0px;
+         color: white;
+         background-color: royalblue;
+         text-align: center
+     }
+     .checkmark{
+         content: "";
+         position: absolute;
+         display: none;
+     }
+     .check input:checked ~ .checkmark:after {
+         display: block;
+     }
+     .rad:hover { 
+         height: 20px;
+         width: 20px;
+        
+     }
+     .subm:hover { 
+         height: 26px;
+         width: 72px;
+         background-color: rebeccapurple;
+     }
+     select, option  {
+         padding: 0px 10px 1px 10px;
+         color: white;
+         background-color: blueviolet;
+     }
+     </style>
+<body>
+<div class="container0">
+     <h1>Registration</h1>
+ </div>
+
+<div class="container1">
+         <nav>
+              <ul> 
+              <li><a  href="page_2_login.html" class="active">Login</a></li>
+              <li><a  href="page_1_main.html" class="active">Home</a></li>
+              <li><a  class = "beta">About</a></li>    
+             </ul> 
+ </div>
+
+<div class="container2">
+    <div class="item">
+         First name: <input type="text" name="firstName" >
+     </div>
+    <div class="item">Last name: <input type="text" name="lastName" >
+     </div>
+    <div class="item">
+         <select>
+            <option value="0">Select City</option>
+            <option value="1">----</option>
+            <option value="1">Moscow</option>
+            <option value="2">Berlin</option>
+            <option value="3">Yerevan</option>
+            <option value="4">Minsk</option>
+            <option value="5">New-Jersy</option>
+            <option value="6">Sidney</option>
+            <option value="7">Deley</option>
+            <option value="8">Tokio</option>
+        </select>
+    </div>
+ </div>
+
+<div class="container3"> 
+  <div class="item">       
+    Famale<label class="check">
+        <input class="rad" type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+  </div>
+  <div class="item">
+    Male:<label class="check">
+        <input class="rad" type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+  </div>
+  <div class="item">
+      <form action=""> <input  class="subm" type="submit" value="Submit"></form> 
+  </div>
+</div>
+
+</body>
+</html>

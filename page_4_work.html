@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WorkSpace</title>
+    
+</head>
+<style>
+    *{
+     font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+     font-size: 18px;
+     transition: all 0.4s ease;
+    }
+     div.container0 {
+         display: flex;
+         padding: 11px;
+         color: turquoise;
+         background-color: royalblue;
+     }
+     div.container1 {
+         padding: auto;
+         display: flex;
+         background-color: turquoise;
+         flex-direction: row;
+         justify-content: flex-end;
+     }
+     div.container2{
+         display: flex; 
+         background-color: turquoise;
+         flex-direction: row;
+         justify-content: center ;
+     }
+     div.container3{
+         display: flex; 
+         background-color: turquoise;
+         flex-direction: row;
+         justify-content: space-evenly;
+     }
+     div.container3_1{
+         flex-basis: 25%;
+         max-height: 300px;
+         overflow: scroll;
+         background-color: white;
+         margin:5px;
+         border: 1px solid  rebeccapurple;
+         flex-direction: column;
+        
+     }
+     div.container3_2{
+         flex-basis: 75%;
+         max-height: 300px;
+         overflow: scroll;
+         background-color: white;
+         margin: 5px;
+         border: 1px solid  rebeccapurple;
+         flex-direction: column;
+     }
+     div.item1 {
+         padding: 10px;
+     }
+     div.item {
+         padding: 5px;
+     }
+
+     div.item:hover {
+         box-shadow:  0px 0px 5px rebeccapurple;
+     }
+     input {
+         color: black;
+         background-color: whitesmoke;
+         font-size: 20px;
+         border: 0px;
+         width: 80%;
+       }
+     button a {
+        background-color: turquoise;
+         color: white;  
+         text-decoration-line: none;              
+         border: 0px;
+     }
+     button {
+        background-color: turquoise;            
+         border: 0px;
+         padding: 8px;
+         margin: 0px;
+     }
+     button a:hover {
+         box-shadow:inset  0px 0px 26px rebeccapurple;
+         background-color: white;
+         padding: 0px;
+         margin: 0px;
+     }
+     button:hover {
+         padding: 10px;
+         margin: 0px;
+     }
+     h3 {
+         border: 0px;
+         padding: 5px;
+         margin: 5px;
+     }
+     nav ul {
+         list-style-type: none;
+         color: white;                
+         padding: 0;
+     }
+     .modal {
+         display: none; 
+         position: fixed; 
+         z-index: 1; 
+         padding-top: 100px; 
+         left: 0;
+         top: 0;
+         width: 100%; 
+         height: 100%; 
+         overflow: auto; 
+         background-color: rgb(0,0,0); 
+         background-color: rgba(0,0,0,0.4);
+         justify-content: center; 
+        }
+     .modalFill {
+         background-color: turquoise;
+         margin: auto;
+         padding: 20px;
+         border: 1px solid #888;
+         width: 50%;
+        }
+     li {
+         float: left;
+         align-self: flex-end;
+         list-style-type: none;
+         }
+     li a {
+         display: inline-block;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+     }
+     li a:hover {
+          background-color: royalblue;
+         }
+     .active {
+          background-color: turquoise;
+         }
+     .beta {
+          background-color: rebeccapurple;
+         }
+     .close {
+          color: #aaaaaa;
+          font-size: 28px;
+          font-weight: bold;
+          margin: 0px 10px 0px 0px;
+         }
+
+     .close:hover,
+     .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+    img {
+         width: 45px;
+         height: 45px;
+         border-radius: 100%;
+     }
+    img:hover {
+         width: 50px;
+         height: 50px;
+         box-shadow:inset  0px 0px 20px rebeccapurple;
+         margin: 0px 0px 15px 0px;
+         background-color: white;
+     }
+     </style>
+<body onload = "onload()">
+<div class="container0">
+     <h1>Work Space</h1>
+ </div>
+
+<div class="container1">
+         <nav>
+              <ul> 
+              <li><a  href="page_2_login.html" class="active">Logout</a></li>
+              <li><a  class = "beta">About</a></li>    
+             </ul> 
+         </nav>
+ </div>
+
+<div class="container2">
+    <div class="item1">
+         <img class="" src="https://cdn3.iconfinder.com/data/icons/fillies-small/64/id-card-512.png" alt="" />
+         
+     </div>
+    <div class ="item1">
+        <h3>USERNAME</h3>
+     </div>
+    <div class ="item1">
+         <button><a  onclick = "Create()" class="active" id="btn">Create New Post</a></button>
+     </div>
+     <div id="myModal"  class="modal">
+         <div class = "modalFill" >
+            <input id = "str">
+            <span onclick ="Close()" class="close">&times;</span>
+            <span onclick ="Add()" class="close">&plus;</span>
+         </div>
+        </div>
+ </div> 
+ <div class="container3">
+<div id ="container3_1" class="container3_1"> 
+
+ </div>
+<div id ="container3_2" class="container3_2"> 
+    <div></div>
+ </div>
+    </div>
+   
+  <script src ="./newPost.js"></script>
+</body>
+</html>
