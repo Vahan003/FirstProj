@@ -45,7 +45,7 @@ if(str.value!== ""){
     
     inp.style.border = "1px solid #888";
     inp.value = "";
-    inp.setAttribute('placeholder', "Reload page for delete post!");
+    inp.setAttribute('placeholder', "Reload then you can delete post!");
     }
 else {
     inp.style.border = "1px solid red";
