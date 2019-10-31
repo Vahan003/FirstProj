@@ -32,6 +32,12 @@
          background-color: turquoise;
          flex-direction: row;
          justify-content: center;
+        
+     }
+     div.container2_1{
+        width: 40%;
+        justify-items: center;
+        
      }
      div.container3{
          display: flex; 
@@ -42,12 +48,18 @@
      div.item {
         padding: 5px;
      }
-     
+     div.item1 {
+        width: 70%;
+        padding: 5px;
+        display: flex;
+        justify-content: flex-end;
+     }
      nav ul {
          list-style-type: none;
          color: white;                
          list-style-type: none;
          padding: 0;
+         margin: 0;
      }
       
      li {
@@ -71,7 +83,14 @@
           background-color: rebeccapurple;
          }
      input{
-         margin: 0px 0px 0px 0px;
+         margin: 0px 0px 0px 10px;
+         border: 0px;
+         color: white;
+         background-color: royalblue;
+         text-align: center
+     }
+     button{
+        margin: 0px 0px 0px 10px;
          border: 0px;
          color: white;
          background-color: royalblue;
@@ -116,30 +135,21 @@
  </div>
 
 <div class="container2">
-    <div class="item">
-         First name: <input type="text" name="firstName" >
+    <div class="container2_1">
+    <div class="item1">Nickname:<input id="nickName" type="text" name="nickName" >
      </div>
-    <div class="item">Last name: <input type="text" name="lastName" >
+    <div class="item1">Last name:<input id="lastName" type="text" name="lastName" >
      </div>
-    <div class="item">
-         <select>
-            <option value="0">Select City</option>
-            <option value="1">----</option>
-            <option value="1">Moscow</option>
-            <option value="2">Berlin</option>
-            <option value="3">Yerevan</option>
-            <option value="4">Minsk</option>
-            <option value="5">New-Jersy</option>
-            <option value="6">Sidney</option>
-            <option value="7">Deley</option>
-            <option value="8">Tokio</option>
-        </select>
-    </div>
- </div>
+    <div class="item1">Email:<input id="email"type="text" name="email" >
+     </div>
+    <div class="item1">Password: <input id="passW" type="password" name="pass" >
+     </div>
+  </div>
+</div>
 
 <div class="container3"> 
   <div class="item">       
-    Famale<label class="check">
+    Famale:<label class="check">
         <input class="rad" type="radio" name="radio">
         <span class="checkmark"></span>
       </label>
@@ -151,9 +161,12 @@
       </label>
   </div>
   <div class="item">
-      <form action=""> <input  class="subm" type="submit" value="Submit"></form> 
+    <button id="submit" class="subm" >Submit</button>
   </div>
+ 
 </div>
-
+<div id="mess" class="item">
+    </div>
+ <script src = "./src/regis.js"></script>
 </body>
 </html>

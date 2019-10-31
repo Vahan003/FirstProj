@@ -21,7 +21,11 @@
            justify-content: flex-end;
            flex-direction: row;
        }
-       
+       div.container1{
+           color: blueviolet;
+           overflow: visible;
+           text-align: center;
+       }
        header {
            padding: 11px;
            color: turquoise;
@@ -37,6 +41,7 @@
            color: white;                
            list-style-type: none;
            padding: 0;
+           margin: 0;
        }
         
        li {
@@ -58,44 +63,42 @@
        .beta {
             background-color: rebeccapurple;
            }
-       form {
-       color: blueviolet;
-       overflow: visible;
-       text-align: center;
-       
-       }
-       form br, form input {
+
+       br,input,button {
            border: 1px;
            color: white;
            background-color: royalblue;
            text-align: center;
        }
+       #mess{
+           color: tomato;
+       }
        </style>
      
-<body>
+    <body>
         <header> 
             <h1>Log in Page</h1>
          </header> 
-        <div class="container">
-     
-         <nav>
-              <ul> 
-              <li><a  href="page_1_main.html" class="active">Home</a></li>
-              <li><a href="index.html" class = "beta">About</a></li>    
-             </ul> 
-          </nav>
-   
+  <div class="container">
+     <nav>
+          <ul> 
+            <li><a  href="page_1_main.html" class="active">Home</a></li>
+            <li><a href="index.html" class = "beta">About</a></li>    
+            </ul> 
+      </nav>
         </div>         
- <form action="page_4_work.html">
-    Nickname:<br>
-    <input type="text" name="nick" >
+        <div class="container1">
+    Email:<br>
+    <input id ="email"type="text" name="email" >
     <br>
     Password:<br>
-    <input type="password" name="pass" >
+    <input id="passW" type="password" name="pass" >
     <br><br>
-    <input  type="submit" value="Submit">
+    <button id = "submit" >Submit</button>
     <br><br>
-  </form> 
-        </div>
+</div>
+    <div id = "mess">
+    </div>
+        <script src="./src/login.js"></script>
 </body>
 </html>
