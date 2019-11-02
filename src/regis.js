@@ -46,10 +46,10 @@ submit.addEventListener('click',() =>{
 
 function redBorder(expr){
     if(expr){
-    nickName.style.border="1px solid red";
-    lastName.style.border="1px solid red";
-    email.style.border="1px solid red";
-    passW.style.border="1px solid red";
+    nickName.style.border="1px solid rgb(138, 7, 7)";
+    lastName.style.border="1px solid rgb(138, 7, 7)";
+    email.style.border="1px solid rgb(138, 7, 7)";
+    passW.style.border="1px solid rgb(138, 7, 7)";
     }
     else{
     nickName.style.border="0";

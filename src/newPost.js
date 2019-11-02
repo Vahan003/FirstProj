@@ -48,7 +48,7 @@ if(str.value!== ""){
     inp.setAttribute('placeholder', "Reload then you can delete post!");
     }
 else {
-    inp.style.border = "1px solid red";
+    inp.style.border = "1px solid rgb(138, 7, 7)";
     }
   }
   function GetArticle(){

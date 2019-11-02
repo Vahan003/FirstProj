@@ -45,8 +45,8 @@ function Get(url){
 }
 function redBorder(expr){
     if(expr){
-    email.style.border="1px solid red";
-    passW.style.border="1px solid red";
+    email.style.border="1px solid rgb(138, 7, 7)";
+    passW.style.border="1px solid rgb(138, 7, 7)";
     }
     else{
     email.style.border="0";
