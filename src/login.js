@@ -31,7 +31,7 @@ submit.addEventListener('click',() =>{
     }).then(data => {
         console.log(data.userId);
         localStorage.setItem("userId", data.userId)
-        window.open("page_4_work.html");
+        window.location.replace("page_4_work.html");
     })
 }
     else{
