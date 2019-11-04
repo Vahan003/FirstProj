@@ -2,7 +2,6 @@ const submit = document.getElementById("submit");
 const email = document.getElementById("email");
 const passW = document.getElementById("passW");
 const mess = document.getElementById("mess");
-localStorage.clear("useId");
 
 submit.addEventListener('click',() =>{
     if((email.value !== "")&&(passW.value !== "")){

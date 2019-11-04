@@ -3,6 +3,7 @@ const userId= localStorage.getItem("userId");
 const logout = document.getElementById("logout");
 logout.addEventListener('click', ()=> {
    window.location.replace("page_2_login.html");
+   localStorage.clear("useId");
 })
 Get(`https://it-blog-posts.herokuapp.com/api/people/${userId}`)
 .then(data => { 
